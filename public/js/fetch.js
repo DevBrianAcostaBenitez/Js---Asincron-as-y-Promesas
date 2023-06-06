@@ -14,8 +14,10 @@ function createTable(elements) {
   tbody.innerHTML = "";
 
   elements.forEach(element => {
+    //para imprimir la lista de titulos
     console.log(element.title)
     const row = document.createElement("tr");
+    //para rellenar la tabla
     row.innerHTML = `
       <td>${element.title}</td>
       <td>${element.priority}</td>
